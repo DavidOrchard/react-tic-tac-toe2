@@ -15,13 +15,19 @@ Tests
 
 ## Assessment
 
-Took about 75 minutes.  Seems too long.
+Took about 75 minutes with test cases.  Seems a bit too long.
+Probably didn't need Board component, could have used App.
 
 What did I not do?
 
  - use Button and Square component, I did td.
  - show who's move it is, status section for wins/next/draw
  - Could have done "XIsNext" instead of storing X or O
+
+What did I forget and figure out:
+- changed state objects but not state so rerender wasn't happening
+- {for} wasn't working so switched to [0, 1, 2].forEach
+- some small html stuff like tbody inside table.
 
 # Getting Started with Create React App
 
