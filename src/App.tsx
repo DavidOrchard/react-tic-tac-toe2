@@ -1,15 +1,20 @@
-import React from 'react';
-import {Board} from './components/Board';
-import './App.css';
+import React from 'react'
+import './App.css'
+import {Panel} from "./components/Panel";
+
+const tabs = [
+  {title:"Simple", content:"foo"},
+  {title:"<span style='font-weight:bold;'>Fancy</span> title", content:"bar"},
+  {title:"Disabled", content:"baz", isDisabled:true}
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Board/>
-      </header>
+    <div className="app">
+      <Panel tabs={tabs}/>
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
